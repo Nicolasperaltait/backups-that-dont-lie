@@ -2,37 +2,57 @@
 
 ## Contexto
 
-La infraestructura depende del storage local para backups operativos y artefactos de
-recuperacion. Un escenario de presion de storage expuso la diferencia entre
-tener archivos de backup y tener una postura real de recuperacion.
+Al principio, maquinas virtuales activas, backups e imagenes de instalacion
+compartian el mismo disco del hipervisor (Proxmox VE).
 
-## Sintoma
+## Problema
 
-El uso de storage crecio hasta generar riesgo operativo. Existian artefactos
-de backup, pero la pregunta importante paso a ser si el entorno podia
-recuperarse de forma intencional y segura.
+El uso del storage principal se acerco al 80 %. Habia archivos de backup, pero
+la pregunta real era otra: **si manana falla algo, puedo recuperar?**
+
+## Por que importaba
+
+Con todo en el mismo disco, un backup grande podia dejar sin espacio a las
+maquinas en produccion a mitad de la noche, y una falla de ese disco se llevaba
+a la vez el servicio y su copia.
 
 ## Decision
 
-La respuesta se enfoco en postura de recuperacion, no en simple limpieza:
+| Opcion | Resultado |
+|---|---|
+| Borrar backups viejos para ganar espacio | descartada: alivia hoy y reduce la capacidad de recuperar |
+| Separar por rol en discos distintos | **adoptada** |
 
-- identificar dominios criticos de backup
-- reducir presion de retencion innecesaria
-- mantener rollback privado y documentado
-- validar artefactos en lugar de confiar en horarios
-- tratar el restore test como hito real de madurez
+- Storage principal reservado a los discos de las maquinas activas.
+- Storage de soporte para backups, imagenes y el NAS.
+- **Si no hay espacio minimo, el backup no corre** y la falla se ve: es
+  preferible a llenar el disco de produccion.
+- Retencion definida por dominio, no "lo que entre".
+
+## Que salio mal en el camino
+
+- Borrar dentro de una maquina virtual no liberaba espacio afuera: un snapshot
+  olvidado retenia los bloques. Desde entonces todo snapshot nace con fecha de
+  retiro (detalle en el caso 03).
+- Archivos que parecian duplicados eran discos en uso: se revisaron referencias
+  antes de borrar (detalle en Hypervisor as Control Plane).
 
 ## Validacion
 
-El patron de validacion fue:
+- Salud del storage confirmada despues del cambio.
+- Backups recientes y legibles, abriendolos, no solo contandolos.
+- Estado de la copia externa confirmado.
+- Pruebas de restauracion con RTO y RPO medidos.
 
-- confirmar salud actual de storage
-- confirmar backups recientes
-- confirmar que archivos criticos son legibles
-- confirmar estado offsite
-- documentar la brecha pendiente de restore
+## Resultado
 
-## Leccion aprendida
+| Antes | Despues |
+|---|---|
+| VMs, backups e imagenes en el mismo disco | Storage separado por rol |
+| Un backup podia llenar produccion | El backup se frena antes y avisa |
+| "Hay archivos de backup" | Restauracion probada con tiempos medidos |
 
-La madurez de backup no se mide por cantidad de archivos. Se mide por la
-capacidad de recuperar limpiamente bajo presion.
+## Leccion
+
+**La madurez de un backup no se mide por cuantos archivos hay, sino por cuanto
+tarda en volver lo que se rompio.**
