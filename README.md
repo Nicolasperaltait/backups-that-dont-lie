@@ -1,4 +1,6 @@
-# Homelab - Backups y Resiliencia
+# Backups That Don't Lie
+
+> Un backup se mide por la edad de su contenido, no por la de su archivo.
 
 Este repositorio documenta, de forma sanitizada, la estrategia de backup y
 recuperacion de un homelab personal, junto con tres casos reales: presion de
@@ -24,6 +26,18 @@ esconderla.
 - [Caso de estudio: presion de storage y postura de recuperacion](docs/casos-de-estudio/01-presion-storage-y-recuperacion.md)
 - [Caso de estudio: eventos de backup como evidencia SIEM](docs/casos-de-estudio/02-eventos-backup-como-evidencia-siem.md)
 - [Caso de estudio: migracion de workstation y respaldos que mentian](docs/casos-de-estudio/03-migracion-de-workstation-y-respaldos-que-mentian.md)
+
+## Parte de una serie
+
+Este repo es una pieza de un proyecto mas grande: un **homelab personal**
+operado como infraestructura real y documentado en cinco repos
+independientes. Cada uno se lee solo; juntos muestran el entorno completo.
+
+- [Zero Trust Remote Access](https://github.com/Nicolasperaltait/zero-trust-remote-access)
+- [Backups That Don't Lie](https://github.com/Nicolasperaltait/backups-that-dont-lie) (este repo)
+- [Alerts That Matter](https://github.com/Nicolasperaltait/alerts-that-matter)
+- [Network Segmentation Playbook](https://github.com/Nicolasperaltait/network-segmentation-playbook)
+- [Hypervisor as Control Plane](https://github.com/Nicolasperaltait/hypervisor-as-control-plane)
 
 ## Licencia
 
