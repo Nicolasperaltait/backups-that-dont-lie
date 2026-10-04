@@ -19,6 +19,7 @@ esconderla.
 
 ## Indice
 
+- [Ficha rapida para quien evalua](contexto.md)
 - [Backup y recuperacion](docs/01-backup-y-recuperacion.md)
 - [Caso de estudio: presion de storage y postura de recuperacion](docs/casos-de-estudio/01-presion-storage-y-recuperacion.md)
 - [Caso de estudio: eventos de backup como evidencia SIEM](docs/casos-de-estudio/02-eventos-backup-como-evidencia-siem.md)
