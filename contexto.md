@@ -4,7 +4,7 @@ Ficha de lectura rapida: que es, por que existe y que muestra.
 
 ## 1. Que es
 
-Estrategia de backup y recuperacion de un homelab, con restauracion probada y tres casos reales de resiliencia.
+Estrategia de backup y recuperacion de una infraestructura productiva personal (homelab), con restauracion probada y tres casos reales de resiliencia.
 
 ## 2. Por que existe
 

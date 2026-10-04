@@ -3,7 +3,7 @@
 ## Contexto
 
 Los backups son controles operativos, pero sus fallos tambien deben verse
-como eventos de seguridad y resiliencia. El lab trata la visibilidad SIEM
+como eventos de seguridad y resiliencia. La infraestructura trata la visibilidad SIEM
 como evidencia, no solo como dashboard.
 
 ## Sintoma

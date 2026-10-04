@@ -2,7 +2,7 @@
 
 ## Contexto
 
-La estacion de trabajo principal del laboratorio necesitaba poder
+La estacion de trabajo desde la que se opera la infraestructura necesitaba poder
 formatearse. Nadie se animaba, porque nadie sabia que se perderia.
 
 La pregunta "que se pierde si formateo" se contesto midiendo, no

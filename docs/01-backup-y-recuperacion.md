@@ -4,7 +4,7 @@
 
 ## Proposito
 
-Describir la estrategia de backup y recuperacion del homelab.
+Describir la estrategia de backup y recuperacion de la infraestructura.
 
 ## Principios
 
@@ -146,7 +146,7 @@ restauracion atrasada*. Se detecto al actualizar esta documentacion.
 | Alta | hipervisor, DNS interno, storage, puerta de acceso remoto, plataforma de apps |
 | Alta | datos y configuracion de servicios criticos, remoto de codigo |
 | Media | observabilidad y dashboards |
-| Variable | servicios auxiliares o de laboratorio |
+| Variable | servicios auxiliares o de prueba |
 
 ## Riesgos abiertos
 

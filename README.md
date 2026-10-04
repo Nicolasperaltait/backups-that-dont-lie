@@ -3,21 +3,40 @@
 > Un backup se mide por la edad de su contenido, no por la de su archivo.
 
 Este repositorio documenta, de forma sanitizada, la estrategia de backup y
-recuperacion de un homelab personal, junto con tres casos reales: presion de
+recuperacion de una infraestructura productiva personal (homelab), junto con tres casos reales: presion de
 storage y postura de recuperacion, eventos de backup tratados como evidencia
 de seguridad, y una migracion de estacion de trabajo que revelo que la
 cadena de respaldos llevaba meses rota sin que nadie lo supiera.
 
-Es parte de un portfolio tecnico pensado para entrevistas de trabajo. No es
-documentacion operativa de un entorno en produccion: es una version
-transformada -decisiones, patrones y aprendizajes- de un homelab real, sin
-datos que permitan identificarlo o reproducirlo.
+Es parte de un portfolio tecnico. **No es un laboratorio de prueba**: es una
+**infraestructura productiva personal**. Un hipervisor de tipo 1 sobre un
+servidor dedicado, encendido 24/7, del que dependen todos los dias la red de la
+casa, los backups, la seguridad y aplicaciones en uso real. Si se apaga, se nota.
+
+La documentacion operativa es privada. Esto es su version transformada
+-decisiones, patrones y aprendizajes-, sin datos que permitan identificar o
+reproducir el entorno.
 
 Lo que busca demostrar: el principio de que un backup se mide por la edad de
 su contenido y no por la de su archivo, la practica de probar la
 restauracion en vez de confiar en que el backup "corrio", y la honestidad
 para documentar una falla de meses -y como se corrigio- en vez de
 esconderla.
+
+## Por que es infraestructura productiva
+
+| Servicio que corre 24/7 | Que pasa si se cae |
+|---|---|
+| DNS de toda la red de la casa | ningun equipo resuelve nombres: para quien la usa, "se corto internet" |
+| Backups nocturnos y copia cifrada fuera del sitio | se pierde la proteccion de los datos y nadie lo nota hasta necesitarla |
+| SIEM, metricas y alertas al telefono | los incidentes pasan sin que nadie se entere |
+| Acceso remoto por malla | no hay forma de operar desde fuera de casa |
+| NAS y espejo de la estacion de trabajo | se corta la sincronizacion de los archivos de trabajo |
+| Aplicaciones propias en uso diario | se frena el uso real, incluido el envio de correo |
+| Remoto de codigo propio | no hay donde versionar ni desde donde desplegar |
+
+Por eso cada cambio se trata como en produccion: plan, rollback, evidencia y
+verificacion de que lo que tiene que fallar, falla.
 
 ## En 30 segundos
 
@@ -52,8 +71,8 @@ respaldo**: ya no puede informar exito sobre contenido viejo.
 
 ## Parte de una serie
 
-Este repo es una pieza de un proyecto mas grande: un **homelab personal**
-operado como infraestructura real y documentado en cinco repos
+Este repo es una pieza de un proyecto mas grande: una **infraestructura
+productiva personal** (homelab), encendida 24/7 y documentada en cinco repos
 independientes. Cada uno se lee solo; juntos muestran el entorno completo.
 
 - [Zero Trust Remote Access](https://github.com/Nicolasperaltait/zero-trust-remote-access)
