@@ -3,11 +3,11 @@
 > Un backup se mide por la edad de su contenido, no por la de su archivo.
 
 <p align="center">
-  <img src="https://img.shields.io/badge/OpenMediaVault-1F2937?style=for-the-badge" alt="OpenMediaVault" />
-  <img src="https://img.shields.io/badge/Backup_y_DR-0F766E?style=for-the-badge" alt="Backup y DR" />
-  <img src="https://img.shields.io/badge/Restore_probado-111827?style=for-the-badge" alt="Restore probado" />
-  <img src="https://img.shields.io/badge/Copia_cifrada-242424?style=for-the-badge" alt="Copia cifrada" />
-  <img src="https://img.shields.io/badge/Forgejo-F46800?style=for-the-badge&logo=forgejo&logoColor=white" alt="Forgejo" />
+  <img src="https://img.shields.io/badge/OpenMediaVault-2563EB?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0id2hpdGUiPjxwYXRoIGQ9Ik0zIDNoMTh2Nkgzem0wIDhoMTh2Nkgzem0wIDhoMTh2Mkgzek02IDUuNWgydjFINnptMCA4aDJ2MUg2eiIvPjwvc3ZnPg%3D%3D&logoColor=white" alt="OpenMediaVault" />
+  <img src="https://img.shields.io/badge/Backup_%26_DR-059669?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0id2hpdGUiPjxwYXRoIGQ9Ik0zIDRoMTh2N0gzem0wIDloMTh2N0gzem0xNC02LjVhMS41IDEuNSAwIDEgMCAwIC4wMXptMCA5YTEuNSAxLjUgMCAxIDAgMCAuMDF6Ii8%2BPC9zdmc%2B&logoColor=white" alt="Backup & DR" />
+  <img src="https://img.shields.io/badge/Restore_probado-1F2937?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0id2hpdGUiPjxwYXRoIGQ9Ik0zIDRoMTh2N0gzem0wIDloMTh2N0gzem0xNC02LjVhMS41IDEuNSAwIDEgMCAwIC4wMXptMCA5YTEuNSAxLjUgMCAxIDAgMCAuMDF6Ii8%2BPC9zdmc%2B&logoColor=white" alt="Restore probado" />
+  <img src="https://img.shields.io/badge/Copia_cifrada-7C3AED?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0id2hpdGUiPjxwYXRoIGQ9Ik0xMiAxYTUgNSAwIDAgMC01IDV2NEg1djEzaDE0VjEwaC0yVjZhNSA1IDAgMCAwLTUtNXptLTMgOVY2YTMgMyAwIDAgMSA2IDB2NHoiLz48L3N2Zz4%3D&logoColor=white" alt="Copia cifrada" />
+  <img src="https://img.shields.io/badge/Forgejo-D97706?style=for-the-badge&logo=forgejo&logoColor=white" alt="Forgejo" />
 </p>
 
 Este repositorio documenta, de forma sanitizada, la estrategia de backup y
