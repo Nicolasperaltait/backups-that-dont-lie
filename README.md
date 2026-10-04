@@ -2,6 +2,14 @@
 
 > Un backup se mide por la edad de su contenido, no por la de su archivo.
 
+<p align="center">
+  <img src="https://img.shields.io/badge/OpenMediaVault-1F2937?style=for-the-badge" alt="OpenMediaVault" />
+  <img src="https://img.shields.io/badge/Backup_y_DR-0F766E?style=for-the-badge" alt="Backup y DR" />
+  <img src="https://img.shields.io/badge/Restore_probado-111827?style=for-the-badge" alt="Restore probado" />
+  <img src="https://img.shields.io/badge/Copia_cifrada-242424?style=for-the-badge" alt="Copia cifrada" />
+  <img src="https://img.shields.io/badge/Forgejo-F46800?style=for-the-badge&logo=forgejo&logoColor=white" alt="Forgejo" />
+</p>
+
 Este repositorio documenta, de forma sanitizada, la estrategia de backup y
 recuperacion de una infraestructura productiva personal (homelab), junto con tres casos reales: presion de
 storage y postura de recuperacion, eventos de backup tratados como evidencia
