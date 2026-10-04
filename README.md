@@ -70,6 +70,9 @@ _Capturas reales del entorno, con nombres, direcciones, usuarios y versiones ree
 ![Panel de backups con retencion y copia externa](docs/img/grafana-backups.png)
 <sub>31 dias de retencion por dominio, salud semanal y copia externa. Los rojos son fallas detectadas y avisadas, no escondidas.</sub>
 
+![OpenMediaVault, el NAS de los backups](docs/img/omv-dashboard.png)
+<sub>OpenMediaVault: el NAS que recibe los backups, 8 dias de uptime y discos con S.M.A.R.T. vigilado.</sub>
+
 ![Forgejo con repositorios privados](docs/img/forgejo-repos.png)
 <sub>El codigo tambien es un dominio de backup: remoto propio y privado.</sub>
 
