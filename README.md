@@ -63,6 +63,16 @@ flowchart LR
 La metrica nueva mide **la edad del archivo mas reciente dentro del
 respaldo**: ya no puede informar exito sobre contenido viejo.
 
+## En vivo
+
+_Capturas reales del entorno, con nombres, direcciones, usuarios y versiones reemplazados por su funcion._
+
+![Panel de backups con retencion y copia externa](docs/img/grafana-backups.png)
+<sub>31 dias de retencion por dominio, salud semanal y copia externa. Los rojos son fallas detectadas y avisadas, no escondidas.</sub>
+
+![Forgejo con repositorios privados](docs/img/forgejo-repos.png)
+<sub>El codigo tambien es un dominio de backup: remoto propio y privado.</sub>
+
 ## Problema, decision, resultado
 
 | Problema | Por que importaba | Que se hizo | Resultado |
