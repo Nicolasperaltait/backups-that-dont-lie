@@ -19,6 +19,29 @@ restauracion en vez de confiar en que el backup "corrio", y la honestidad
 para documentar una falla de meses -y como se corrigio- en vez de
 esconderla.
 
+## En 30 segundos
+
+| Indicador | Resultado |
+|---|---|
+| Tiempo que un respaldo estuvo congelado mientras la metrica decia "horas" | **casi 4 meses** |
+| Eslabones de esa cadena que siguieron corriendo despues del corte | **4 de 5** |
+| Recuperacion medida del servicio chico | **segundos** |
+| Recuperacion medida del dominio documental | **menos de 2 minutos** |
+| Cuarentena antes de borrar cualquier cosa en la migracion | **30 dias**, con manifiesto |
+
+```mermaid
+flowchart LR
+    T[Tarea programada] -->|apuntaba a un script borrado| X((CORTE))
+    X -.-> S[Espejo congelado]
+    S --> C[Compresion nocturna]
+    C --> H[Hash OK]
+    H --> M[Metrica: edad del comprimido]
+    M --> OK[Dashboard: respaldo de hace horas]
+```
+
+La metrica nueva mide **la edad del archivo mas reciente dentro del
+respaldo**: ya no puede informar exito sobre contenido viejo.
+
 ## Indice
 
 - [Ficha rapida para quien evalua](contexto.md)
