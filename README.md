@@ -83,6 +83,7 @@ _Capturas reales del entorno, con nombres, direcciones, usuarios y versiones ree
 | Un respaldo llevaba casi 4 meses congelado y la metrica decia "horas" | se habria restaurado algo viejo creyendo que era de ayer | medir la edad del contenido, no la del archivo | ya no puede informar exito sobre datos viejos |
 | La copia fuera del sitio fallo varios dias sin avisar | la proteccion externa era una ilusion | aviso enganchado a la salida del proceso, que ocurre siempre | toda falla avisa |
 | Formatear la estacion de trabajo daba miedo: nadie sabia que se perdia | historial de meses en un solo disco | migracion en fases, cuarentena de 30 dias y prueba en maquina limpia | rearmado probado leyendo solo el documento |
+| La mayoria de los repositorios no tenia remoto | un disco que falla se lleva meses de historial | remoto privado con CI y proteccion en capas, con copia en frio | ninguna capa cae junto con otra |
 
 El detalle de cada uno, con lo que salio mal en el camino, esta en los casos de estudio.
 
@@ -93,6 +94,7 @@ El detalle de cada uno, con lo que salio mal en el camino, esta en los casos de 
 - [Caso de estudio: presion de storage y postura de recuperacion](docs/casos-de-estudio/01-presion-storage-y-recuperacion.md)
 - [Caso de estudio: eventos de backup como evidencia SIEM](docs/casos-de-estudio/02-eventos-backup-como-evidencia-siem.md)
 - [Caso de estudio: migracion de workstation y respaldos que mentian](docs/casos-de-estudio/03-migracion-de-workstation-y-respaldos-que-mentian.md)
+- [Caso de estudio: codigo que sobrevive](docs/casos-de-estudio/04-codigo-que-sobrevive.md)
 
 ## Parte de una serie
 
